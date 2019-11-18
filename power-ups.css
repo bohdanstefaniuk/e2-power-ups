@@ -1,0 +1,184 @@
+/*
+ *  Cuts for notes
+ */
+.e2-note-text .cut-button {
+    color: var(--linkColor);
+    border-color: var(--linkUnderlineColor);
+    transition-property: border-bottom,border-color,background,color,fill;
+    transition-duration: var(--time);
+    transition-timing-function: ease-out;
+    text-decoration: none;
+    text-decoration: underline;
+    width: fit-content;
+    display: block;
+    cursor: pointer;
+}
+
+.e2-note-text .cut-button:hover {
+    color: var(--hoverColor);
+    border-color: var(--hoverUnderlineColor);
+    transition: none;
+}
+
+.e2-note-text .cut-content {
+    display: none;
+    padding: 0;
+    padding-top: 10px;
+    margin: 0;
+}
+
+.visible {
+    display: block !important;
+}
+
+/*
+ *  Higlights for text
+ */
+.e2-note-text .highlight {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fefde8;
+    display:  inline-block
+}
+
+.e2-note-text .highlight h2 {
+    color: #106edc;
+    font-size: 20px;
+}
+
+.e2-note-text .highlight p:last-child {
+    margin: 0px;
+}
+
+/*
+ * Notes on fields
+ */
+.e2-text .note {
+    padding: 15px;
+    float: right;
+    clear: right;
+    width: 25%;
+    min-width: 150px;
+    text-align: left;
+    background-color: #f2f2f2;
+    font-family: var(--smallFontFamily);
+    font-size: 12px;
+    position: relative;
+}
+
+.e2-text .note-md {
+    padding: 15px;
+    float: right;
+    clear: right;
+    width: 25%;
+    min-width: 150px;
+    text-align: left;
+    background-color: #f2f2f2;
+    font-family: var(--smallFontFamily);
+    font-size: 12px;
+    position: relative;
+}
+
+@media (max-width: 750px) {
+    .e2-text .note-md {
+        padding: 15px;
+        width: 100%;
+    }
+}
+
+/*
+ * Gallery view
+ */
+.card-gallery {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.card-gallery .e2-text-picture {
+    margin: 0 15px 20px 0;
+    display: inline-block;
+}
+
+.card-gallery-4 .e2-text-picture{
+    width: 23%;
+    margin-right: 2.2%;
+}
+
+.card-gallery-3 .e2-text-picture {
+    width: 31%;
+    margin-right: 3%;
+}
+
+.card-gallery-3 .e2-text-picture:nth-child(3n) {
+    margin-right: 0;
+}
+
+.card-gallery-4 .e2-text-picture:nth-child(4n) {
+    margin-right: 0;
+}
+
+
+@media (max-width: 893px) {
+    .card-gallery-4 .e2-text-picture {
+        width: 31%;
+        margin-right: 3%;
+    }
+
+    .card-gallery-4 .e2-text-picture:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    .card-gallery-4 .e2-text-picture:nth-child(4n) {
+        margin-right: 3%;
+    }
+}
+
+@media (max-width: 835px) {
+    .card-gallery-3 .e2-text-picture {
+        width: 48%;
+        margin-right: 1%;
+    }
+
+    .card-gallery-3 .e2-text-picture:nth-child(3n) {
+        margin-right: 1%;
+    }
+
+    .card-gallery-3 .e2-text-picture:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .card-gallery-4 .e2-text-picture {
+        width: 48%;
+        margin-right: 1%;
+    }
+
+    .card-gallery-4 .e2-text-picture:nth-child(3n) {
+        margin-right: 1%;
+    }
+
+    .card-gallery-4 .e2-text-picture:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .card-gallery .e2-text-picture {
+        display: block;
+        width: 100% !important;
+        margin-right: 0 !important;
+    }
+}
+
+/*
+ * New big blue H2 tag
+ */
+.e2-note-text .big-h {
+    color: #106edc;
+    font-size: 20px;
+    line-height: inherit;
+    margin: 36px 0 10px 0;
+    font-weight: bold;
+}
+
+
+
